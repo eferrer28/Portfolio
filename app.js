@@ -14,11 +14,6 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));*/
 
-app.get('/',function(req,res,next){
-  var context = {};
-  
-  res.render('home',context);
-});
 
 
 app.use(express.static('public'));
@@ -28,7 +23,24 @@ app.set('view engine', 'handlebars');
 app.set('port', 3000);
 
 
+app.get('/',function(req,res,next){
+  var context = {};
+  
+  res.render('home',context);
+});
 
+app.get('/about',function(req,res,next){
+  var context = {};
+  
+  res.render('about',context);
+});
+
+
+app.get('/example',function(req,res,next){
+  var context = {};
+  
+  res.render('example',context);
+});
 
 app.use(function (req, res) {
     res.status(404);
