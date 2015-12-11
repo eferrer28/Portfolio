@@ -35,6 +35,11 @@ app.get('/about',function(req,res,next){
   res.render('about',context);
 });
 
+app.get('/projects',function(req,res,next){
+  var context = {};
+  
+  res.render('about',context);
+});
 
 app.get('/example',function(req,res,next){
   var context = {};
