@@ -4,13 +4,13 @@ var app = express();
 var handlebars = require('express-handlebars').create({
     defaultLayout: 'main'
 });
+//var normalize_css_code = require("normalize.css");
 //var request = require('request');
 //var bodyParser = require('body-parser');
 
 
 
-/*app.use(express.static(__dirname + '/public'));
-app.use(bodyParser.urlencoded({
+/*app.use(bodyParser.urlencoded({
     extended: false
 }));*/
 
@@ -39,6 +39,18 @@ app.get('/projects',function(req,res,next){
   var context = {};
   
   res.render('projects',context);
+});
+
+app.get('/dom',function(req,res,next){
+  var context = {};
+  //alert("aho ho ho");
+  res.render('dom',context);
+});
+
+app.get('/weather',function(req,res,next){
+  var context = {};
+  
+  res.render('weather',context);
 });
 
 app.get('/example',function(req,res,next){

@@ -1,54 +1,53 @@
 <!doctype html>
 <html>
 
-
-
-
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-   
-    
-    
-    
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+
 </head>
-
-
 
 <body>
 
-    
-<div id="wrapper">
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand"><a href="/">Home</a></li>
-            <li><a href="/unirest">About</a></li>
-            <li><a href="/Projects">Projects</a></li>
-            <li><a href="/example">Contact</a></li>
-        </ul>
-    </div>
-    <div id="page-content-wrapper">
-        <div class="page-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        
-                         {{{body}}}
-                        
-                    </div>
+
+    <div id="wrapper">
+
+        <div id="sidebar-wrapper">
+            <div class="headshot">
+                <a href="/about"><img src="headshot.jpg" alt="dom" style="width:100px;height:100px;"></a>
+            </div>
+            <h2 class="name">Eric Ferrer</h2>
+            <span class="tag">CS Student</span>
+            <nav>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand"><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/Projects">Projects</a></li>
+                    <li><a href="/example">Contact</a></li>
+                </ul>
+                <div class="icons">
+                    <i class="fa fa-github fa-2x"></i>
+                    <i class="fa fa-linkedin fa-2x"></i>
+                    <i class="fa fa-twitter fa-2x"></i>
+
                 </div>
+        </div>
+
+        <div id="page-content-wrapper">
+            <div class="page-content">
+
+                {{{body}}}
+
             </div>
         </div>
     </div>
-</div>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
 
 </body>
-
-
 
 </html>

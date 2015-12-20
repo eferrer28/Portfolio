@@ -10,7 +10,8 @@ function makeTable() {
     }
 
     newTable.appendChild(newRow);
-    document.body.appendChild(newTable);
+   // document.body.appendChild(newTable);
+    document.getElementById("page-content-wrapper").appendChild(newTable);
     var newRow = document.createElement("tr");
     for (var j = 0; j < 3; j++) {
         var newRow = document.createElement("tr");
@@ -43,7 +44,8 @@ function addButtons(name) {
 
         
     var abutton = document.createElement("button");
-    document.body.appendChild(abutton);
+    //document.body.appendChild(abutton);
+        document.getElementById("page-content-wrapper").appendChild(abutton);
     var label = document.createTextNode(name);
     abutton.appendChild(label);
 

@@ -1,76 +1,169 @@
 #wrapper {
-  padding-left: 250px;
-  transition: all 0.4s ease 0s;
+    padding-left: 250px;
+    transition: all 0.4s ease 0s;
 }
-
 #sidebar-wrapper {
-  margin-left: -250px;
-  left: 250px;
-  width: 250px;
-  background: #000;
-  position: fixed;
-  height: 100%;
-  overflow-y: auto;
-  z-index: 1000;
-  transition: all 0.4s ease 0s;
+    margin-left: -250px;
+    left: 250px;
+    width: 250px;
+    background: #000;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+    background-color: #74AFAD;
+    padding-top: 25px;
 }
-
 #page-content-wrapper {
-  
-  margin: 0;
-  float: left;
-    
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 25px;
 }
-
+#page-content-wrapper p {
+    font-size: 16px;
+    font-family: "Proxima Nova Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-top: 20px;
+}
+.container {
+    width: 80%;
+}
 .sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    top: 0;
+    width: 200px;
+    list-style: none;
+    margin: 0;
+    padding-top: 25px;
+}
+.headshot {
+    box-sizing: border-box;
+    color: #888;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.headshot img {
+    border-radius: 50px;
+    border-color: white;
+    border-style: solid;
+}
+.name {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Nothing You Could Do', cursive;
+}
+li a {
+    color: #FFF;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top 15px;
+    padding-bottom: 15px;
+    padding-right: 0;
+    padding-left 0px;
+    background-color: #6DABA9;
+}
+.headduh {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.project {
+    display: inline-block;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+.project:hover {
+    opacity: 0.3;
 }
 
-.intro, .unirest, .data, .example{
-    width: 75%;
+/* Styling for the the Project Images */
+
+#project1 {
+    width: 420px;
+    height: 200px;
+    background: url("DOM_tree.png");
+    background-size: cover;
+    overflow: hidden;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
     
-    
+        
 }
 
+#project2 {
+    width: 420px;
+    height: 200px;
+    background: url("weather.png");
+    background-size: contain;
+    overflow: hidden;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+        
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .75);
+    text-align: center;
+    padding: 45px 0 66px 0;
+    opacity: 0;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+    width: 100%;
+    height: 100%;
+}
+.box:hover .overlay {
+    opacity: 1;
+}
+.projcontent {
+    font-family: Helvetica;
+    font-weight: 900;
+    color: rgba(255, 255, 255, .85);
+    font-size: 20px;
+}
+
+/* End Style for Project Images */
 
 @media (max-width:767px) {
-
     #wrapper {
-      padding-left: 0;
+        padding-left: 0;
     }
-
     #sidebar-wrapper {
-      left: 0;
+        left: 0;
     }
-
     #wrapper.active {
-      position: relative;
-      left: 250px;
+        position: relative;
+        left: 250px;
     }
-
     #wrapper.active #sidebar-wrapper {
-      left: 250px;
-      width: 250px;
-      transition: all 0.4s ease 0s;
+        left: 250px;
+        width: 250px;
+        transition: all 0.4s ease 0s;
     }
-
 }
-
-
 .highlight {
     color: #FFF;
-    
 }
-p, ol, ul, blockquote, pre, code, .highlight, table {
+p,
+ol,
+ul,
+blockquote,
+pre,
+code,
+.highlight,
+table {
     line-height: 1.5em;
     margin-bottom: 1.5em;
 }
-.highlight, pre code {
+.highlight,
+
+pre code {
     display: block;
     min-width: 460px;
     max-width: 860px;
@@ -79,4 +172,3 @@ p, ol, ul, blockquote, pre, code, .highlight, table {
     border-radius: 6px;
     padding: 20px;
 }
-

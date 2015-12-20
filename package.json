@@ -9,6 +9,7 @@
   "author": "eric ferrer",
   "license": "ISC",
   "dependencies": {
-    "express-handlebars": "^2.0.1"
+    "express-handlebars": "^2.0.1",
+    "normalize.css": "^3.0.3"
   }
 }
