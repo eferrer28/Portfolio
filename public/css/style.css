@@ -92,7 +92,7 @@ li a {
 #project1 {
     width: 420px;
     height: 200px;
-    background: url("DOM_tree.png");
+    background: url("dom.png");
     background-size: contain;
     overflow: hidden;
     display: inline-block;
