@@ -185,6 +185,14 @@ li a {
 
 /* ONLY A TEST */
 
+@media (min-width: 768px) {
+  /* line 18, ../sass/_layout.scss */
+  .main-container {
+    margin-left: 194px;
+    padding: 1.5em;
+  }
+}
+
 
 /* line 67, ../sass/_layout.scss */
 .mobile-nav {
@@ -201,6 +209,14 @@ li a {
   .mobile-nav {
     display: none;
   }
+
+@media (min-width: 768px) {
+  /* line 81, ../sass/_layout.scss */
+  #sidebar-wrapper {
+    display: block;
+  }
+}   
+
 
     
 /* ONLY A TEST */
