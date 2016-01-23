@@ -183,8 +183,29 @@ li a {
     font-size: 20px;
 }
 
-/* End Style for Project Images 
+/* ONLY A TEST */
 
+
+/* line 67, ../sass/_layout.scss */
+.mobile-nav {
+  position: fixed;
+  left: 5px;
+  top: 5px;
+}
+/* line 72, ../sass/_layout.scss */
+.mobile-nav.menu-active {
+  left: 199px;
+}
+@media (min-width: 768px) {
+  /* line 67, ../sass/_layout.scss */
+  .mobile-nav {
+    display: none;
+  }
+
+    
+/* ONLY A TEST */
+    
+    
 @media (max-width:767px) {
     #wrapper {
         padding-left: 0;
@@ -205,7 +226,8 @@ li a {
 .highlight {
     color: #FFF;
 }
-*/
+
+
 p,
 ol,
 ul,
