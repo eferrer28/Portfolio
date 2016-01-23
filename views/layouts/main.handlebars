@@ -14,9 +14,12 @@
 <body>
 
 
-    <div id="wrapper" class="main-container">
+    <div id="wrapper" >
+        <div class="mobile-nav">
+      <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+    </div>
 
-        <div id="sidebar-wrapper" class="mobile-nav">
+        <div id="sidebar-wrapper">
             <div class="headshot">
                 <a href="/about"><img src="headshot.jpg" alt="dom" style="width:100px;height:100px;"></a>
             </div>
@@ -40,8 +43,8 @@
                 
         </div>
 
-        <div id="page-content-wrapper">
-            <div class="page-content">
+        <div id="page-content-wrapper" class="main-container">
+            <div class="page-content" class="main">
 
                 {{{body}}}
 
@@ -51,7 +54,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
-    <scipt src="js/another.js"></scipt>
+    <script src="js/another.js"> </script>
         
         
 
