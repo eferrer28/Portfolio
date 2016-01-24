@@ -46,16 +46,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding-top: 0px;
   margin-left: 1em;
 }
-/* line 24, ../sass/_layout.scss */
 .main-container.menu-active {
-  margin-left: 194px;
+  margin-left: 220px;
   padding-left: 2.5em;
 }
 @media (min-width: 768px) {
-  /* line 18, ../sass/_layout.scss */
   .main-container {
-    margin-left: 220px;
-    padding: 1.5em;
+    margin-left: 225px;
+    padding-top: 1.5em;
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-bottom: 1.5em;
   }
 }
 
