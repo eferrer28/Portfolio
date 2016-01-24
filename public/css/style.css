@@ -38,6 +38,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding-left: 50px;
     
 }
+
+.icons a{
+    opacity: 0.5;
+    color: white;
+}
+
+.icons a:hover {
+    opacity: 1.0;
+}
+
+
+
 .main-container {
   padding: 1.5em;
   padding-right: 1em;
@@ -124,6 +136,12 @@ li a {
     font-weight: 700;
     line-height: 40px;
 }
+
+.workingon {
+    
+    padding-left: 1.5em; 
+}
+
 .project {
     display: inline-block;
     padding-right: 20px;
@@ -186,6 +204,30 @@ li a {
 #project5 {
     width: 420px;
     height: 200px;
+    background: url("address.jpg");
+    background-size: contain;
+    overflow: hidden;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+       
+}
+
+#project6 {
+    width: 420px;
+    height: 200px;
+    background: url("dungeon.png");
+    background-size: contain;
+    overflow: hidden;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+       
+}
+
+#project7 {
+    width: 420px;
+    height: 200px;
     background: url("calculator.jpg");
     background-size: contain;
     overflow: hidden;
@@ -195,6 +237,17 @@ li a {
        
 }
 
+#project8 {
+    width: 420px;
+    height: 200px;
+    background: url("bucket.jpg");
+    background-size: contain;
+    overflow: hidden;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+       
+}
 .overlay {
     background: rgba(0, 0, 0, .75);
     
@@ -224,7 +277,7 @@ li a {
     color: #FFF;
 }
 
-
+/*
 p,
 ol,
 ul,
@@ -247,3 +300,4 @@ pre code {
     border-radius: 6px;
     padding: 20px;
 }
+*/

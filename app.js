@@ -53,10 +53,20 @@ app.get('/weather',function(req,res,next){
   res.render('weather',context);
 });
 
-app.get('/example',function(req,res,next){
+app.get('/howto',function(req,res,next){
+  var context = {};
+  res.render('howto',context);
+});
+
+app.get('/exercise',function(req,res,next){
+  var context = {};
+  res.render('exercise',context);
+});
+
+app.get('/contact',function(req,res,next){
   var context = {};
   
-  res.render('example',context);
+  res.render('contact',context);
 });
 
 app.use(function (req, res) {
