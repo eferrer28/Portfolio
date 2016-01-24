@@ -24,12 +24,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     display: none;
 }
 @media (min-width: 768px) {
-  /* line 81, ../sass/_layout.scss */
   #sidebar-wrapper {
     display: block;
   }
 }   
-/* line 95, ../sass/_layout.scss */
 #sidebar-wrapper.menu-active {
   display: block;
 }
