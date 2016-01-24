@@ -45,7 +45,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin-left: 1em;
 }
 .main-container.menu-active {
-  margin-left: 220px;
+  margin-left: 225px;
   padding-left: 2.5em;
 }
 @media (min-width: 768px) {
@@ -82,10 +82,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .sidebar-nav {
     top: 0;
-    width: 200px;
+    width: 225x;
     list-style: none;
     margin: 0;
     padding-top: 25px;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
 }
 .headshot {
     box-sizing: border-box;
