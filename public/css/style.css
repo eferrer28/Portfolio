@@ -71,7 +71,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 /* line 72, ../sass/_layout.scss */
 .mobile-nav.menu-active {
-  left:255px;
+  left:225px;
 }
 @media (min-width: 768px) {
   /* line 67, ../sass/_layout.scss */
