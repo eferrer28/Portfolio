@@ -63,6 +63,11 @@ app.get('/exercise',function(req,res,next){
   res.render('exercise',context);
 });
 
+app.get('/calculator',function(req,res,next){
+  var context = {};
+  res.render('calculator',context);
+});
+
 app.get('/contact',function(req,res,next){
   var context = {};
   

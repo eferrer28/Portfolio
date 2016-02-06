@@ -267,3 +267,61 @@ li a {
 .highlight {
     color: #FFF;
 }
+
+/* Styling for Calculator Images */
+
+.output {
+    width:500px;
+    margin-top: 15px;
+    padding-top: 25px;
+}
+
+top {
+    
+    padding-bottom: 10px;
+    
+}
+
+.firstrow td{
+    
+    
+    padding-top: 50px;
+    padding-left: 20px;
+      
+}
+
+
+.secondrow td{
+    
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.thirdrow td{
+    
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.fourthrow td{
+    padding-top: 10px;
+    padding-left: 20px;
+    
+}
+
+.fifthrow td{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+}
+
+input:not([type=text]) {
+    
+    background-color: gainsboro;
+    width: 80px;
+}
+
+.yabba {
+    background-color: blue;
+    width: 500px;
+}
