@@ -1,17 +1,21 @@
 
     <table class="yabba">
+        <tbody>
         <div class="top"></div>
-        <input class="output "type="text" name="output" value="" >
-        <br>
+           <tr class="output" >
+               <td colspan="4">
+               <input class="output "type="text" name="output" value="" ></td>
+            </tr>
+        
         <tr class="firstrow">
             <td>
                 <input class="clearentry" type="submit" name="clearsentry" value="CE">
             </td>
             <td>
-                <input class="clr" type="submit" name="clear" value="C">
+                <input class="clearall" type="submit" name="clear" value="C">
             </td>
             <td>
-                <input type="submit" value="+/-">
+                <input class="posneg" type="submit" value="+/-">
             </td>
             <td>
                 <input type="submit" value="S%">
@@ -28,7 +32,7 @@
                 <input class="nine" type="submit" value="9">
             </td>
             <td>
-                <input type="submit" value="/">
+                <input class="divide operation"type="submit" value="/" name="divide">
             </td>
         </tr>
                 <tr class="thirdrow">
@@ -42,7 +46,7 @@
                 <input class="six" type="submit" value="6">
             </td>
             <td>
-                <input class="multiply" type="submit" value="x">
+                <input class="multiply operation" type="submit" value="x" name="multiply">
             </td>
         </tr>
                 <tr class="fourthrow">
@@ -56,7 +60,7 @@
                 <input class="three" type="submit" value="3">
             </td>
             <td>
-                <input type="submit" value="-">
+                <input class="subtract operation"type="submit" value="-" name="subtract">
             </td>
         </tr>
                 <tr class="fifthrow">
@@ -67,12 +71,13 @@
                 <input class="decimal"type="submit" value="." name="decimal">
             </td>
             <td>
-                <input class="equal" type="submit" value="=" name="equal">
+                <input class="equal calculate" type="submit" value="=" name="equal">
             </td>
             <td>
-                <input class="add" type="submit" value="+" name="add">
+                <input class="add operation" type="submit" value="+" name="add">
             </td>
         </tr>
+            </tbody>
         <div></div>
     </table>
 
