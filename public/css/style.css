@@ -1,5 +1,3 @@
-
-
 #sidebar-wrapper {
     margin-left: -225px;
     left: 225px;
@@ -11,78 +9,69 @@
     z-index: 1000;
     transition: all 0.4s ease 0s;
     background-color: #74AFAD;
-    padding-top: 25px; 
+    padding-top: 25px;
     display: none;
 }
 @media (min-width: 768px) {
-  #sidebar-wrapper {
-    display: block;
-  }
-}   
-#sidebar-wrapper.menu-active {
-  display: block;
+    #sidebar-wrapper {
+        display: block;
+    }
 }
-
+#sidebar-wrapper.menu-active {
+    display: block;
+}
 .icons {
-    
     margin-left: 25px;
     padding-left: 50px;
-    
 }
-
-.icons a{
+.icons a {
     opacity: 0.5;
     color: white;
 }
-
 .icons a:hover {
     opacity: 1.0;
 }
-
-
-
 .main-container {
-  padding: 1.5em;
-  padding-right: 1em;
-  padding-top: 0px;
-  margin-left: 1em;
+    padding: 1.5em;
+    padding-right: 1em;
+    padding-top: 0px;
+    margin-left: 1em;
 }
 .main-container.menu-active {
-  margin-left: 225px;
-  padding-left: 2.5em;
-}
-@media (min-width: 768px) {
-  .main-container {
     margin-left: 225px;
-    padding-top: 1.5em;
-    padding-right: 5em;
-    padding-left: 5em;
-    padding-bottom: 1.5em;
-  }
-}
-
-.main {
-  max-width: 940px;
-  font-size: 18px;
-  margin: 0px auto;
-}
-
-.mobile-nav {
-  position: fixed;
-  left: 5px;
-  top: 5px;
-}
-/* line 72, ../sass/_layout.scss */
-.mobile-nav.menu-active {
-  left:225px;
+    padding-left: 2.5em;
 }
 @media (min-width: 768px) {
-  /* line 67, ../sass/_layout.scss */
-  .mobile-nav {
-    display: none;
-  }
+    .main-container {
+        margin-left: 225px;
+        padding-top: 1.5em;
+        padding-right: 5em;
+        padding-left: 5em;
+        padding-bottom: 1.5em;
+    }
+}
+.main {
+    max-width: 940px;
+    font-size: 18px;
+    margin: 0px auto;
+}
+.mobile-nav {
+    position: fixed;
+    left: 5px;
+    top: 5px;
 }
 
+/* line 72, ../sass/_layout.scss */
+
+.mobile-nav.menu-active {
+    left: 225px;
+}
+@media (min-width: 768px) {
+    /* line 67, ../sass/_layout.scss */
+    .mobile-nav {
+        display: none;
+    }
+}
 .sidebar-nav {
     top: 0;
     width: 225x;
@@ -107,10 +96,14 @@
 .name {
     color: #FFF;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Nothing You Could Do', cursive;
 }
-li a {
+.tag {
+    color: #FFF;
+    padding-left: 25px;
+}
+.sidebar-nav li a {
     color: #FFF;
     font-size: 16px;
     display: block;
@@ -127,143 +120,12 @@ li a {
     font-weight: 700;
     line-height: 40px;
 }
-
 .workingon {
-    
-    padding-left: 1.5em; 
-}
-
-.project {
-    display: inline-block;
-    padding-right: 20px;
-    padding-top: 50px;
-}
-.project:hover {
-    opacity: 0.3;
+    padding-left: 1.5em;
 }
 
 /* Styling for the the Project Images */
 
-#project1 {
-    width: 420px;
-    height: 200px;
-    background: url("dom.png");
-    background-size: contain;
-    overflow: hidden;
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;   
-        
-}
-
-#project2 {
-    width: 420px;
-    height: 200px;
-    background: url("weather.png");
-    background-size: contain;
-    overflow: hidden;
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-         
-}
-
-#project3 {
-    width: 420px;
-    height: 200px;
-    background: url("howto.jpg");
-    background-size: contain;
-    overflow: hidden;
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-         
-}
-
-#project4 {
-    width: 420px;
-    height: 200px;
-    background: url("exercise.png");
-    background-size: contain;
-    overflow: hidden;
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-        
-}
-
-#project5 {
-    width: 420px;
-    height: 200px;
-    background: url("address.jpg");
-    background-size: contain;
-    overflow: hidden;
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-       
-}
-
-#project6 {
-    width: 420px;
-    height: 200px;
-    background: url("dungeon.png");
-    background-size: contain;
-    overflow: hidden;
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-       
-}
-
-#project7 {
-    width: 420px;
-    height: 200px;
-    background: url("calculator.jpg");
-    background-size: contain;
-    overflow: hidden;
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-       
-}
-
-#project8 {
-    width: 420px;
-    height: 200px;
-    background: url("bucket.jpg");
-    background-size: contain;
-    overflow: hidden;
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-       
-}
-.overlay {
-    background: rgba(0, 0, 0, .75);
-    
-
-    opacity: 0;
-    -webkit-transition: opacity .25s ease;
-    -moz-transition: opacity .25s ease;
-    width: 100%;
-    height: 100%;
-    font-family: Helvetica;
-    font-weight: 900;
-    color: rgba(255, 255, 255, .85);
-    font-size: 20px;
-}
-.box:hover .overlay {
-    opacity: 1;
-}
-.projcontent {
-    font-family: Helvetica;
-    font-weight: 900;
-    color: rgba(255, 255, 255, .85);
-    font-size: 20px;
-}
-
-   
 .highlight {
     color: #FFF;
 }
@@ -275,60 +137,280 @@ li a {
     margin-top: 15px;
     margin-left: 100px;
     padding-top: 25px;
-    
 }
-
 top {
-    
     padding-bottom: 10px;
-    
 }
-
-.firstrow td{
-    
-    
+.firstrow td {
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
-      
 }
-
-
-.secondrow td{
-    
+.secondrow td {
     padding-top: 10px;
     padding-left: 20px;
 }
-
-.thirdrow td{
-    
+.thirdrow td {
     padding-top: 10px;
     padding-left: 20px;
 }
-
-.fourthrow td{
+.fourthrow td {
     padding-top: 10px;
     padding-left: 20px;
-    
 }
-
-.fifthrow td{
+.fifthrow td {
     padding-top: 10px;
     padding-bottom: 25px;
     padding-left: 20px;
 }
-
 input:not([type=text]) {
-    
     background-color: gainsboro;
     width: 60px;
 }
-
 .yabba {
     background-color: #0099FF;
-      
+}
+input {
+    text-align: right;
 }
 
- input {
-    text-align:right;
+/* Styling for the the Project Images */
+
+ul.rig {
+    list-style: none;
+    font-size: 0px;
+    margin-left: -2.5%;
+    /* should match li left margin */
 }
+ul.rig li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 0 2.5% 2.5%;
+    background: #fff;
+    font-size: 16px;
+    font-size: 1rem;
+    vertical-align: top;
+}
+ul.rig li img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+    opacity: 0.5;
+}
+ul.rig li img:hover {
+    opacity: 1.0;
+}
+ul.rig li h3 {
+    margin: 0 0 5px;
+}
+ul.rig li p {}
+
+/* class for 2 columns */
+
+ul.rig.columns-2 li {
+    width: 47.5%;
+    /* this value + 2.5 should = 50% */
+}
+
+/* class for 3 columns */
+
+ul.rig.columns-3 li {
+    width: 30.83%;
+    /* this value + 2.5 should = 33% */
+}
+
+/* class for 4 columns */
+
+ul.rig.columns-4 li {
+    width: 22.5%;
+    /* this value + 2.5 should = 25% */
+}
+.dom {
+    padding-top: 26px;
+}
+.hmm {
+    margin-bottom: 50px;
+    margin-top: 2em;
+    padding-top: 27px;
+}
+.dumbbell {
+    padding-top: 15px
+}
+.dungeon {
+    padding-top: 25px;
+}
+.dungtext {
+    padding-top: 50px
+}
+.calculator {
+    padding-top: 15px;
+}
+.bucket {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.bucktext {
+    padding-top: 52px;
+}
+
+/*** ABOUT ME STYLING ***/
+
+.skills {
+     text-align: center;
+}
+
+.first {
+    background: white;
+    box-shadow: 0 0 3px #ccc;
+}
+.second {
+    background: white;
+    box-shadow: 0 0 3px #ccc;
+}
+.third {
+    background: white;
+    box-shadow: 0 0 3px #ccc;
+}
+.four {
+    background: white;
+    box-shadow: 0 0 3px #ccc;
+}
+.html {
+    background: url("html5.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+}
+.css {
+    background: url("css3.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+}
+.js {
+    background: url("javascript.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.jquery {
+    background: url("jquery.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.php {
+    background: url("php.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.express {
+    background: url("express.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.node {
+    background: url("nodejs.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.python {
+    background: url("python.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.django {
+    background: url("django.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.git {
+    background: url("git.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.mysql {
+    background: url("mysql.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.gulp {
+    background: url("gulp.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.clang {
+    background: url("c.jpg");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.cplus {
+    background: url("cplus.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.masm {
+    background: url("masm.jpg");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.vs {
+    background: url("vs.png");
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.tech {
+    padding-left: 285px;
+    padding-top: 15px;
+}
+.
