@@ -117,7 +117,7 @@ app.get('/exercise', function (req, res, next) {
                 current.lbs = "kilos";
             }
         });
-        res.render('home', context);
+        res.render('exercise', context);
     });
 });
 
