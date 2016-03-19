@@ -57,12 +57,12 @@ app.get('/howto',function(req,res,next){
   var context = {};
   res.render('howto',context);
 });
-
+/*
 app.get('/exercise',function(req,res,next){
   var context = {};
   res.render('exercise',context);
 });
-
+*/
 app.get('/calculator',function(req,res,next){
   var context = {};
   res.render('calculator',context);
@@ -102,7 +102,7 @@ app.get('/reset-table', function (req, res, next) {
 });
 
 
-app.get('/', function (req, res, next) {
+app.get('/exercise', function (req, res, next) {
     var context = {};
     mysql.pool.query('SELECT * FROM workouts', function (err, rows, fields) {
         if (err) {
