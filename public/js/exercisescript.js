@@ -14,7 +14,7 @@ function magicHappens() {
                 payload.units = document.getElementById('lbs').value;
                 payload.workout = true;
 
-                req.open('POST', '/insert', true);
+                req.open('POST', '/exercise', true);
                 alert("3645");
                 req.setRequestHeader('Content-Type', 'application/json');
                 req.addEventListener('load', function () {
