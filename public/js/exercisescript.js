@@ -1,6 +1,8 @@
 function magicHappens() {
 
-        document.getElementById('exercise').addEventListener('click', function (event) {
+    alert("fack");
+    
+    document.getElementById('exercise').addEventListener('click', function (event) {
                 var req = new XMLHttpRequest();
                 var payload = {};
                 console.log("4");
