@@ -123,7 +123,7 @@ app.get('/exercise', function (req, res, next) {
 
 
 
-app.post('/insert', function (req, res, next) {
+app.post('/exercise', function (req, res, next) {
             var context = {};
 
             //if(req.body['Exercise']){
