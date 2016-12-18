@@ -9,7 +9,7 @@ var handlebars = require('express-handlebars').create({
 });
 //var normalize_css_code = require("normalize.css");
 
-app.use( require('express-subdomain-handler')({ baseUrl: 'ericferrer.me', prefix: 'myprefix', logger: true }) );
+app.use(require('express-subdomain-handler')({ baseUrl: 'ericferrer.me', prefix: 'myprefix', logger: true }) );
 
 app.use(express.static('public'));
 
@@ -22,10 +22,8 @@ app.get('/blog/:ericferrer.me/thepage', function(req, res, next){
     // for the example url this will print 'mysubdomain'
       res.render('blog',context);
 
-
 });
 
-});
 app.get('/',function(req,res,next){
   var context = {};
   
