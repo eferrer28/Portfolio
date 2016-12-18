@@ -9,20 +9,19 @@ var handlebars = require('express-handlebars').create({
 });
 //var normalize_css_code = require("normalize.css");
 
-app.use(subdomain({ base : 'localhost', removeWWW : true }));
-app.use(express.static('public'));
+app.use( require('express-subdomain-handler')({ baseUrl: 'ericferrer.me', prefix: 'myprefix', logger: true }) );app.use(express.static('public'));
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', 80);
 
-app.get('/subdomain/blog/', function(req,res,next) {
-    res.render('blog',context);
+app.get('/blog/:ericferrer.me/thepage', function(req, res, next){
+
+    // for the example url this will print 'mysubdomain'
+      res.render('blog',context);
+
 
 });
-
-app.get('/subdomain/fudge/', function(req,res,next) {
-    res.render('about',context);
 
 });
 app.get('/',function(req,res,next){
