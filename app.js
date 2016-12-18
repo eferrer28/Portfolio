@@ -1,18 +1,25 @@
 var express = require('express');
 
 var app = express();
+
+var subdomain = require('../lib/subdomain');
+
 var handlebars = require('express-handlebars').create({
     defaultLayout: 'main'
 });
 //var normalize_css_code = require("normalize.css");
 
-
+app.use(subdomain({ base : 'localhost', removeWWW : true }));
 app.use(express.static('public'));
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', 80);
 
+app.get('/subdomain/blog/', function(request, response) {
+    res.render('home',context);
+
+});
 
 app.get('/',function(req,res,next){
   var context = {};
@@ -65,11 +72,7 @@ app.get('/contact',function(req,res,next){
   res.render('contact',context);
 });
 
-app.get('blog.ericferrer.me',function(req,res,next){
-  var context = {};
-  
-  res.render('blog',context);
-});
+
 
 
 
