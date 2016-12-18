@@ -17,10 +17,14 @@ app.set('view engine', 'handlebars');
 app.set('port', 80);
 
 app.get('/subdomain/blog/', function(request, response) {
-    res.render('home',context);
+    res.render('blog',context);
 
 });
 
+app.get('/subdomain/fudge/', function(request, response) {
+    res.render('404',context);
+
+});
 app.get('/',function(req,res,next){
   var context = {};
   
