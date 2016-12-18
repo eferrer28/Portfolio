@@ -11,16 +11,8 @@ app.use(require('subdomain')(subdomainOptions));
 var handlebars = require('express-handlebars').create({
     defaultLayout: 'main'
 });
-//var normalize_css_code = require("normalize.css");
 
-/*
-app.get('/subdomain/blog/', function(request, response) {
-  response.end('BLOG.LOCALHOST: "/"');
-});*/
 
-app.get('/subdomain/blog/', function(request, response) {
-  res.render('blog',context);
-});
 
 
 app.use(express.static('public'));
@@ -29,11 +21,14 @@ app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', 80);
 
-app.get('/blog/:+localhost/thepage', function(req, res, next){
 
-    // for the example url this will print 'mysubdomain'
-      res.render('blog',context);
+/*
+app.get('/subdomain/blog/', function(request, response) {
+  response.end('BLOG.LOCALHOST: "/"');
+});*/
 
+app.get('/subdomain/blog/', function(request, response) {
+  res.render('blog',context);
 });
 
 app.get('/',function(req,res,next){
