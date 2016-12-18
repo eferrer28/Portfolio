@@ -65,6 +65,11 @@ app.get('/contact',function(req,res,next){
   res.render('contact',context);
 });
 
+app.get('blog.ericferrer.me',function(req,res,next){
+  var context = {};
+  
+  res.render('blog',context);
+});
 
 
 
