@@ -9,7 +9,9 @@ var handlebars = require('express-handlebars').create({
 });
 //var normalize_css_code = require("normalize.css");
 
-app.use( require('express-subdomain-handler')({ baseUrl: 'ericferrer.me', prefix: 'myprefix', logger: true }) );app.use(express.static('public'));
+app.use( require('express-subdomain-handler')({ baseUrl: 'ericferrer.me', prefix: 'myprefix', logger: true }) );
+
+app.use(express.static('public'));
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
