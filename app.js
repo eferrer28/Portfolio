@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express();
 
-var subdomain = require('../lib/subdomain');
+var subdomain = require('subdomain');
 
 var handlebars = require('express-handlebars').create({
     defaultLayout: 'main'
