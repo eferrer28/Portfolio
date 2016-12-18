@@ -2,14 +2,20 @@ var express = require('express');
 
 var app = express();
 
-var subdomain = require('subdomain');
+var subdomainOptions = {
+  base: 'localhost' //base is required, you'll get an error without it.
+};
+
+app.use(require('subdomain')(subdomainOptions));
 
 var handlebars = require('express-handlebars').create({
     defaultLayout: 'main'
 });
 //var normalize_css_code = require("normalize.css");
 
-app.use(require('express-subdomain-handler')({ baseUrl: 'ericferrer.me', prefix: 'blog', logger: true }) );
+app.get('/subdomain/blog/', function(request, response) {
+  response.end('BLOG.LOCALHOST: "/"');
+});
 
 app.use(express.static('public'));
 
@@ -17,7 +23,7 @@ app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', 80);
 
-app.get('/blog/:ericferrer.me/thepage', function(req, res, next){
+app.get('/blog/:+localhost/thepage', function(req, res, next){
 
     // for the example url this will print 'mysubdomain'
       res.render('blog',context);
