@@ -10,7 +10,7 @@ var handlebars = require('express-handlebars').create({
 //var normalize_css_code = require("normalize.css");
 
 app.use(subdomain({ base : 'ericferrer.me', removeWWW : true }));
-app.use(express.static('public')
+app.use(express.static('public');
 
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
