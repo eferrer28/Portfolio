@@ -27,7 +27,8 @@ app.get('/subdomain/blog/', function(request, response) {
   response.end('BLOG.LOCALHOST: "/"');
 });*/
 
-app.get('/subdomain/blog/', function(request, response) {
+app.get('/subdomain/blog/', function(req,res,next) {
+  console.log("wat");
   res.render('blog',context);
 });
 
