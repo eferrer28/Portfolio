@@ -34,6 +34,12 @@ app.get('/about',function(req,res,next){
   res.render('about',context);
 });
 
+app.get('/underconstruction',function(req,res,next){
+  var context = {};
+  
+  res.render('construction',context);
+});
+
 app.get('/projects',function(req,res,next){
   var context = {};
   
@@ -54,7 +60,7 @@ app.get('/weather',function(req,res,next){
 
 app.get('/howto',function(req,res,next){
   var context = {};
-  res.render('howto',context);
+  res.render('construction',context);
 });
 /*
 app.get('/exercise',function(req,res,next){
@@ -70,7 +76,7 @@ app.get('/calculator',function(req,res,next){
 app.get('/contact',function(req,res,next){
   var context = {};
   
-  res.render('contact',context);
+  res.render('construction',context);
 });
 
 
