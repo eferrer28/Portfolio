@@ -2,11 +2,8 @@ var express = require('express');
 
 var app = express();
 
-var subdomainOptions = {
-  base: 'localhost' //base is required, you'll get an error without it.
-};
 
-app.use(require('subdomain')(subdomainOptions));
+
 
 var handlebars = require('express-handlebars').create({
     defaultLayout: 'main'
@@ -22,15 +19,8 @@ app.set('view engine', 'handlebars');
 app.set('port', 8080);
 
 
-/*
-app.get('/subdomain/blog/', function(request, response) {
-  response.end('BLOG.LOCALHOST: "/"');
-});*/
 
-app.get('/subdomain/blog/', function(req,res,next) {
-  console.log("wat");
-  res.render('blog',context);
-});
+
 
 app.get('/',function(req,res,next){
   var context = {};
