@@ -85,6 +85,12 @@ app.get('/skyverge',function(req,res,next){
   res.render('SkyVerge',context);
 });
 
+app.get('/ionicprojects',function(req,res,next){
+  var context = {};
+
+  res.render('ionicprojects',context);
+});
+
 
 
 
