@@ -24,25 +24,25 @@ app.set('port', 8080);
 
 app.get('/',function(req,res,next){
   var context = {};
-  
+
   res.render('home',context);
 });
 
 app.get('/about',function(req,res,next){
   var context = {};
-  
+
   res.render('about',context);
 });
 
 app.get('/underconstruction',function(req,res,next){
   var context = {};
-  
+
   res.render('construction',context);
 });
 
 app.get('/projects',function(req,res,next){
   var context = {};
-  
+
   res.render('projects',context);
 });
 
@@ -54,7 +54,7 @@ app.get('/dom',function(req,res,next){
 
 app.get('/weather',function(req,res,next){
   var context = {};
-  
+
   res.render('weather',context);
 });
 
@@ -75,11 +75,15 @@ app.get('/calculator',function(req,res,next){
 
 app.get('/contact',function(req,res,next){
   var context = {};
-  
+
   res.render('construction',context);
 });
 
+app.get('/skyverge',function(req,res,next){
+  var context = {};
 
+  res.render('SkyVerge',context);
+});
 
 
 
